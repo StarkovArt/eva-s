@@ -213,13 +213,12 @@
 					курсивных языкового правилами заголовок. Дал буквенных на берегу, грустный маленький, не продолжил, рукописи океана послушавшись великий большой сих?</p>
 			</div>
 			<div class="row">
-
-				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3" data-ng-repeate="program in programs">
 				<div class="programs-item__wrapper">
-					<img src="img/programs/1.jpg" alt="">
+					<img src="{{program.imageUrl}}" alt="{{program.title}}">
 					<div class="overlay">
 						<div class="overlay-innerwrap">
-						<p>Обучение</p>
+						<p>{{program.name}}</p>
 						<button type="button" class="orange_btn">Подробнее</button>
 						</div>
 					</div>
