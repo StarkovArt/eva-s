@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html class="no-js" lang="ru" data-ng-app="">
 
 <head>
 
@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/Magnific-Popup/dist/magnific-popup.css" charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 
 <!--[if lt IE 9]>
@@ -29,27 +31,361 @@
 	<![endif]-->
 
 <body>
-
-
-
-
-	<section>
+	<section class="header-contacts hidden-xs hidden-sm hidden-md">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">Стартовый</div>
-				<div class="col-md-4">Шаблон</div>
-				<div class="col-md-4">Готов к работе!</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-2">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel:+375297082921">+375(29) 7082921</a>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-5">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<span>Ул. Рогачевская, 10В Военный городок Уручье</span>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-3">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<span>Пн - Пт: 7:00 - 20:00</span>
+				</div>
+				<div class="header-contacts_social hidden-xs hidden-sm hidden-md col-lg-2">
+					<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="topMenu">
+		<div class="container">
+			<!--десктопное меню-->
+			<div class="row hidden-xs hidden-sm hidden-md">
+				<div class="topMenu-logo col-xs-12 col-sm-12 col-md-12 col-lg-2">
+					<img src="img/logo.svg" alt="" />
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+					<nav>
+						<ul>
+							<li><a href="#">Домой</a></li>
+							<li><a href="#">Программы</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid material-design-hamburger">
+			<!--mobile меню-->
+			<div class="mobmenu row hidden-lg">
+			<div class="plr0 col-xs-4 col-sm-4 col-md-4">
+				<button class="material-design-hamburger__icon">
+		      <span class="material-design-hamburger__layer"></span>
+    		</button>
+			</div>
+			<div class="plr0 moblogoCenter col-xs-4 col-sm-4 col-md-4">
+				<img src="img/moblogo.svg" alt="" />
+			</div>
+			<div class="dots plr0 col-xs-4 col-sm-4 col-md-4">
+				<div class="dots-wrapper clearfix">
+				<div class="wrap">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container slideMenu">
+			<div class="row">
+				<div class="col-xs-12">
+					<nav>
+						<ul>
+							<li><a href="#">Домой</a></li>
+							<li><a href="#">Программы</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="paralaxBlue paddings bg-holder" data-width="1024" data-height="768">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<h1>Eva`s TinyLand - маленькая страна больших знаний</h1>
+					<div class="child hidden-xs hidden-sm hidden-md col-lg-7">
+						<img src="img/cild.png" alt="">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+						<img class="line" src="img/lineWhite.svg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum libero eaque saepe at consectetur doloribus quas et adipisci minima dolor!</p>
+						<button class="orange_btn">Узнать больше</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="paddings welcom">
+		<div class="container">
+			<div class="row hidden-xs">
+				<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+					<h1>Заголовок h1</h1>
+					<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил, родного бросил на берегу. Рыбного семь текста злых, агенство щеке от всех коварных, большой вопроса заглавных строчка повстречался пояс запятых, до необходимыми
+						свою! Рукопись запятых вершину там грамматики над по всей живет снова заманивший составитель оксмокс. Себя рыбными жаренные составитель имеет свой?</p>
+					<button class="orange_btn">Узнать больше</button>
+				</div>
+				<div class="welcom-rightSide col-sm-5 col-md-5 col-lg-5">
+					<img src="img/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="row hidden-sm hidden-md hidden-lg">
+				<div class="welcom-rightSide col-xs-12">
+					<h1>Заголовок h1</h1>
+					<img src="img/1.jpg" alt="">
+				</div>
+
+				<div class="col-xs-12">
+					<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил, родного бросил на берегу. Рыбного семь текста злых, агенство щеке от всех коварных, большой вопроса заглавных строчка повстречался пояс запятых, до необходимыми
+						свою! Рукопись запятых вершину там грамматики над по всей живет снова заманивший составитель оксмокс. Себя рыбными жаренные составитель имеет свой?</p>
+					<button class="orange_btn">Узнать больше</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="paddings why">
+		<div class="container">
+			<div class="row">
+				<div class="why-h1 col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<h1>Почему мы?</h1>
+					<img src="img/line.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row why-items">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="left">
+						<i class="fa fa-users" aria-hidden="true"></i>
+					</div>
+					<div class="right">
+						<h2>Квалифицированный персонал</h2>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Букв за текстами мир маленькая большой, имеет продолжил. Приставка пустился журчит агенство взгляд единственное маленькая свою всемогущая о щеке имеет.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="left">
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					</div>
+					<div class="right">
+						<h2>Интересные программы</h2>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Букв за текстами мир маленькая большой, имеет продолжил. Приставка пустился журчит агенство взгляд единственное маленькая свою всемогущая о щеке имеет.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="left">
+						<i class="fa fa-street-view" aria-hidden="true"></i>
+					</div>
+					<div class="right">
+						<h2>Удобное месторасположенеие</h2>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Букв за текстами мир маленькая большой, имеет продолжил. Приставка пустился журчит агенство взгляд единственное маленькая свою всемогущая о щеке имеет.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="paddings programs">
+		<div class="container">
+			<div class="row">
+				<div class="programs-h1 col-xs-12 col-sm-12 col-md-12 col-lg12">
+					<h1>Ппрограммы</h1>
+					<img src="img/line.svg" alt="" />
+				</div>
+				<p class="why-p col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-2 col-md-push-2">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Назад алфавит родного за дорогу все до, семантика заголовок предложения диких она. Обеспечивает, запятых. Не букв приставка коварных, там запятых над, большой своих
+					курсивных языкового правилами заголовок. Дал буквенных на берегу, грустный маленький, не продолжил, рукописи океана послушавшись великий большой сих?</p>
+			</div>
+			<div class="row">
+
+				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="programs-item__wrapper">
+					<img src="img/programs/1.jpg" alt="">
+					<div class="overlay">
+						<div class="overlay-innerwrap">
+						<p>Обучение</p>
+						<button type="button" class="orange_btn">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="programs-item__wrapper">
+					<img src="img/programs/1.jpg" alt="">
+					<div class="overlay">
+						<div class="overlay-innerwrap">
+						<p>Обучение</p>
+						<button type="button" class="orange_btn">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="programs-item__wrapper">
+					<img src="img/programs/1.jpg" alt="">
+					<div class="overlay">
+						<div class="overlay-innerwrap">
+						<p>Обучение</p>
+						<button type="button" class="orange_btn">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="programs-item__wrapper">
+					<img src="img/programs/1.jpg" alt="">
+					<div class="overlay">
+						<div class="overlay-innerwrap">
+						<p>Обучение</p>
+						<button type="button" class="orange_btn">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="teachers paddings" data-width="1024" data-height="768">
+		<div class="container-fluid">
+			<div class="row teachers-h1">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<h1>Наши педагоги</h1>
+					<img src="img/lineWhite.svg" alt="">
+				</div>
+			</div>
+			<div class="row teachers-row">
+				<div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="wrap">
+						<p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
+						<div class="teacher-wrap">
+							<img src="img/teachers/1.jpg" alt="">
+							<h5>Alex Ross</h5>
+							<p>Designer at Comix Publishing</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="wrap">
+						<p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
+						<div class="teacher-wrap">
+							<img src="img/teachers/1.jpg" alt="">
+							<h5>Alex Ross</h5>
+							<p>Designer at Comix Publishing</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="wrap">
+						<p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
+						<div class="teacher-wrap">
+							<img src="img/teachers/1.jpg" alt="">
+							<h5>Alex Ross</h5>
+							<p>Designer at Comix Publishing</p>
+						</div>
+					</div>
+				</div>
 
 
+			</div>
 
+		</div>
+	</section>
 
+	<section class="teachers-gallery">
+		<div class="container-fluid">
+			<div class="row popup-gallery">
 
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+				<div class="image-wrap col-xs-6 col-sm-3 col-md-3 col-lg-2">
+					<a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="The Cleaner">
+						<img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg">
+						<div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="conainer-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-lg-12">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gPoxnHX4O8EcyX5qN6Asl5zSHr4p03Dw&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">1</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">1</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="libs/angular/angular.min.js" ></script>
 	<script src="js/libs.js" charset="utf-8"></script>
 	<script src="js/common.js" charset="utf-8"></script>
+	<script src="libs/parallax-scroll/src/jquery.parallax-scroll.js" charset="utf-8"></script>
+	<script src="libs/Magnific-Popup/dist/jquery.magnific-popup.min.js" charset="utf-8"></script>
 </body>
 
 </html>

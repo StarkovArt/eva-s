@@ -1,45 +1,39 @@
 $(function() {
-	$('.user_accaunt').on('click', function(){
-		$('.togglemnu').slideToggle();
-	});
-
-	var docH = $('.hidemenuR').height();
-	var docHeight = 30+docH;
-
-	$(window).on('resize', function(){
-		var docH1 = $('.hidemenuR').height();
-		var docHeight2 = 30+docH1;
-		$('.content__left-wrap').height(docHeight2);
-
-		var width = $(this).width();
-		if(width){
-			$('.cross').on('click', function(){
-				$('.cross').toggleClass('flag');
-			});
+	function mobMnu(){
+		if($(this).children().hasClass('material-design-hamburger__icon--to-arrow')){
+			$('.slideMenu').animate({'left':'-300px'},400)
+		}else{
+			$('.slideMenu').animate({'left':'0'},400)
 		}
-	})
+	}
 
-$('.content__left-wrap').height(docHeight);
+	$('.material-design-hamburger__icon').click(mobMnu)
 
-
-//мобильное меню
-var windowWidth = $(this).width()
-if(windowWidth < 768 ){
-	$('.cross').on('click', function(){
-		$('.hidemenul').toggleClass('col-xs-1 hidden-xs');
-		$('.hidemenuR').toggleClass('col-xs-11 col-xs-12');
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}
+		}
 	});
-}else if(windowWidth >= 1200){
-		$('.cross').on('click', function(){
-				$('.cross').toggleClass('flag');
-				$('.hidemenul').toggleClass('col-lg-1 col-lg-2');
-				$('.general_mnu ul li a i').toggleClass('i');
-					$('.general_mnu ul li a span').toggleClass('dn');
-				$('.hidemenuR').toggleClass('col-lg-11 col-lg-10');
-		});
-}
 
+	$('.bg-holder').parallaxScroll({
+	  friction: 0.3
+	});
 
+	$('.teachers').parallaxScroll({
+	  friction: 0.15
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -65,5 +59,34 @@ if(windowWidth < 768 ){
 		});
 		return false;
 	});
+
+
+
+
+	(function() {
+
+	  'use strict';
+
+	  document.querySelector('.material-design-hamburger__icon').addEventListener(
+	    'click',
+	    function() {
+	      var child;
+
+	      document.body.classList.toggle('background--blur');
+	      this.parentNode.nextElementSibling.classList.toggle('menu--on');
+
+	      child = this.childNodes[1].classList;
+
+	      if (child.contains('material-design-hamburger__icon--to-arrow')) {
+	        child.remove('material-design-hamburger__icon--to-arrow');
+	        child.add('material-design-hamburger__icon--from-arrow');
+	      } else {
+	        child.remove('material-design-hamburger__icon--from-arrow');
+	        child.add('material-design-hamburger__icon--to-arrow');
+	      }
+
+	    });
+
+	})();
 
 });
