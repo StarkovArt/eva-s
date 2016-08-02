@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="libs/Magnific-Popup/dist/magnific-popup.css" charset="utf-8">
+	<link rel="stylesheet" href="libs/Magnific-Popup/dist/magnific-popup.css">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
 
@@ -29,7 +29,7 @@
 		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 		<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-{{2+2}}
+
 <body>
 	<section class="header-contacts hidden-xs hidden-sm hidden-md">
 		<div class="container">
@@ -207,57 +207,27 @@
 			<div class="row">
 				<div class="programs-h1 col-xs-12 col-sm-12 col-md-12 col-lg12">
 					<h1>{{title}}</h1>
-					<img src="img/line.svg" alt="" />
+					<img data-ng-src="img/line.svg" alt="" />
 				</div>
 				<p class="why-p col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-2 col-md-push-2">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Назад алфавит родного за дорогу все до, семантика заголовок предложения диких она. Обеспечивает, запятых. Не букв приставка коварных, там запятых над, большой своих
 					курсивных языкового правилами заголовок. Дал буквенных на берегу, грустный маленький, не продолжил, рукописи океана послушавшись великий большой сих?</p>
 			</div>
 			<div class="row">
-				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3" data-ng-repeate="program in programs">
+
+			<!--дублируемый контейнер-->
+				<div class="programs-item col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="program in programs">
 				<div class="programs-item__wrapper">
-					<img src="{{program.imageUrl}}" alt="{{program.title}}">
+					<img  src="{{program.imageUrl}}" alt="{{program.title}}">
 					<div class="overlay">
 						<div class="overlay-innerwrap">
-						<p>{{program.name}}</p>
+						<p>{{program.title}}</p>
 						<button type="button" class="orange_btn">Подробнее</button>
 						</div>
 					</div>
 				</div>
 				</div>
 
-				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
-				<div class="programs-item__wrapper">
-					<img src="img/programs/1.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-innerwrap">
-						<p>Обучение</p>
-						<button type="button" class="orange_btn">Подробнее</button>
-						</div>
-					</div>
-				</div>
-				</div>
-				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
-				<div class="programs-item__wrapper">
-					<img src="img/programs/1.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-innerwrap">
-						<p>Обучение</p>
-						<button type="button" class="orange_btn">Подробнее</button>
-						</div>
-					</div>
-				</div>
-				</div>
-				<div class="programs-item col-xs-12 col-sm-3 col-md-3 col-lg-3">
-				<div class="programs-item__wrapper">
-					<img src="img/programs/1.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-innerwrap">
-						<p>Обучение</p>
-						<button type="button" class="orange_btn">Подробнее</button>
-						</div>
-					</div>
-				</div>
-				</div>
+
 
 			</div>
 		</div>
@@ -380,10 +350,9 @@
 		</div>
 	</section>
 
-	<script src="libs/angular/angular.min.js" ></script>
-	<script src="js/controllers.js">
-
-	</script>
+	<script src="libs/angular/angular.min.js"  charset="utf-8"></script>
+	<script src="js/ngRoute.min.js" charset="utf-8"></script>
+	<script src="js/controllers.js" charset="utf-8"></script>
 	<script src="js/libs.js" charset="utf-8"></script>
 	<script src="js/common.js" charset="utf-8"></script>
 	<script src="libs/parallax-scroll/src/jquery.parallax-scroll.js" charset="utf-8"></script>

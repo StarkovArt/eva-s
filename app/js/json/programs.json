@@ -1,10 +1,30 @@
 [
-    {
-        "age": 0,
-        "id": "motorola-xoom-with-wi-fi",
-        "imageUrl": "img/programs/bees.jpg",
-        "name": "Motorola XOOM\u2122 with Wi-Fi",
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
-        "status": true
-    },
+  {
+    "imageUrl": "img/programs/clever.jpg",
+    "title": "«Клевер» для детей от 2 до 3 лет"
+  },
+  {
+    "imageUrl": "img/programs/mamaRjadom.jpg",
+    "title": "«Мама рядом» для детей от 1 до 2 лет"
+  },
+  {
+    "imageUrl": "img/programs/bees.jpg",
+    "title": "Адаптация к детскому саду «Пчелки»"
+  },
+  {
+    "imageUrl": "img/programs/learning.jpg",
+    "title": "Английский язык с 3 до 12 лет"
+  },
+  {
+    "imageUrl": "img/programs/personEnglish.jpg",
+    "title": "Английский язык. Индивидуальные занятия"
+  },
+  {
+    "imageUrl": "img/programs/prepeaToScool.jpg",
+    "title": "Подготовка к школе с 4 до 6 лет «Академики»"
+  },
+  {
+    "imageUrl": "img/programs/worldOnHand.jpg",
+    "title": "Интеллектуальное развитие детей 3-4 года"
+  }
 ]
