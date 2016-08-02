@@ -78,23 +78,23 @@
 		<div class="container-fluid material-design-hamburger">
 			<!--mobile меню-->
 			<div class="mobmenu row hidden-lg">
-			<div class="plr0 col-xs-4 col-sm-4 col-md-4">
-				<button class="material-design-hamburger__icon">
-		      <span class="material-design-hamburger__layer"></span>
-    		</button>
-			</div>
-			<div class="plr0 moblogoCenter col-xs-4 col-sm-4 col-md-4">
-				<img src="img/moblogo.svg" alt="" />
-			</div>
-			<div class="dots plr0 col-xs-4 col-sm-4 col-md-4">
-				<div class="dots-wrapper clearfix">
-				<div class="wrap">
-					<div class="dot"></div>
-					<div class="dot"></div>
-					<div class="dot"></div>
+				<div class="plr0 col-xs-4 col-sm-4 col-md-4">
+					<button class="material-design-hamburger__icon">
+						<span class="material-design-hamburger__layer"></span>
+					</button>
 				</div>
+				<div class="plr0 moblogoCenter col-xs-4 col-sm-4 col-md-4">
+					<img src="img/moblogo.svg" alt="" />
 				</div>
-			</div>
+				<div class="dots plr0 col-xs-4 col-sm-4 col-md-4">
+					<div class="dots-wrapper clearfix">
+						<div class="wrap">
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container slideMenu">
@@ -114,9 +114,9 @@
 		</div>
 	</section>
 
-<div class="site-content">
-<ng-view></ng-view>
-</div>
+
+		<data-ng-view></data-ng-view>
+
 
 
 	<section class="footer">
@@ -128,14 +128,17 @@
 		</div>
 	</section>
 
-	<script src="libs/angular/angular.min.js"  charset="utf-8"></script>
-	<script src="js/controllers.js" charset="utf-8"></script>
-	<script src="js/ngRoute.min.js" charset="utf-8"></script>
+
 
 	<script src="js/libs.js" charset="utf-8"></script>
 	<script src="js/common.js" charset="utf-8"></script>
 	<script src="libs/parallax-scroll/src/jquery.parallax-scroll.js" charset="utf-8"></script>
 	<script src="libs/Magnific-Popup/dist/jquery.magnific-popup.min.js" charset="utf-8"></script>
+
+	<script src="libs/angular/angular.min.js" charset="utf-8"></script>
+	<script src="js/controllers.js" charset="utf-8"></script>
+	<script src="js/ngRoute.min.js" charset="utf-8"></script>
+
 </body>
 
 </html>
