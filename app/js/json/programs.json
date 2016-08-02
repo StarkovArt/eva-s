@@ -1,30 +1,37 @@
 [
   {
     "imageUrl": "img/programs/clever.jpg",
-    "title": "«Клевер» для детей от 2 до 3 лет"
+    "title": "«Клевер» для детей от 2 до 3 лет",
+    "id": "Clover-for-children-from-2-to-3-years"
   },
   {
     "imageUrl": "img/programs/mamaRjadom.jpg",
-    "title": "«Мама рядом» для детей от 1 до 2 лет"
+    "title": "«Мама рядом» для детей от 1 до 2 лет",
+    "id": "Mom-Next-Door"
   },
   {
     "imageUrl": "img/programs/bees.jpg",
-    "title": "Адаптация к детскому саду «Пчелки»"
+    "title": "Адаптация к детскому саду «Пчелки»",
+    "id": "daptation-for-kindergarten"
   },
   {
     "imageUrl": "img/programs/learning.jpg",
-    "title": "Английский язык с 3 до 12 лет"
+    "title": "Английский язык с 3 до 12 лет",
+    "id": "english-language"
   },
   {
     "imageUrl": "img/programs/personEnglish.jpg",
-    "title": "Английский язык. Индивидуальные занятия"
+    "title": "Английский язык. Индивидуальные занятия",
+    "id": "english-language-individual"
   },
   {
     "imageUrl": "img/programs/prepeaToScool.jpg",
-    "title": "Подготовка к школе с 4 до 6 лет «Академики»"
+    "title": "Подготовка к школе с 4 до 6 лет «Академики»",
+    "id": "prepea-To-Scool"
   },
   {
     "imageUrl": "img/programs/worldOnHand.jpg",
-    "title": "Интеллектуальное развитие детей 3-4 года"
+    "title": "Интеллектуальное развитие детей 3-4 года",
+    "id": "intelegense-improve"
   }
 ]
