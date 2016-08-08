@@ -116,49 +116,25 @@
   </div>
 </section>
 
-<section class="teachers paddings" data-width="1024" data-height="768">
+<section class="teachers paddings" data-width="1024" data-height="768" data-ng-controller="evasTeachersCtr">
   <div class="container-fluid">
     <div class="row teachers-h1">
       <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
-        <h1>Наши педагоги</h1>
+        <h1>{{title}}</h1>
         <img src="img/lineWhite.svg" alt="">
       </div>
     </div>
     <div class="row teachers-row">
-      <div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="wrap">
-          <p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
+      <div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="teacher in teachers">
+        <div class="wrap" >
+          <p>{{teacher.aboutme}}</p>
           <div class="teacher-wrap">
-            <img src="img/teachers/1.jpg" alt="">
-            <h5>Alex Ross</h5>
-            <p>Designer at Comix Publishing</p>
+            <img src="{{teacher.imageUrl}}" alt="{{teacher.name}}">
+            <h5>{{teacher.name}}</h5>
+            <p>{{teacher.position}}</p>
           </div>
         </div>
       </div>
-
-      <div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="wrap">
-          <p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
-          <div class="teacher-wrap">
-            <img src="img/teachers/1.jpg" alt="">
-            <h5>Alex Ross</h5>
-            <p>Designer at Comix Publishing</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="teachers-item col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="wrap">
-          <p>My younger son returns very happy with all activities happening at your school every day. Thank you!</p>
-          <div class="teacher-wrap">
-            <img src="img/teachers/1.jpg" alt="">
-            <h5>Alex Ross</h5>
-            <p>Designer at Comix Publishing</p>
-          </div>
-        </div>
-      </div>
-
-
     </div>
 
   </div>

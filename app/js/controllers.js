@@ -67,3 +67,10 @@ evasApp.controller('evasAboutCtr', function($scope, $http, $location) {
 evasApp.controller('evasContactsCtr', function($scope, $http, $location) {
 	$scope.title = 'Контакты';
 });
+
+evasApp.controller('evasTeachersCtr', function($scope, $http, $location){
+    $scope.title = 'Наши педагоги';
+        $http.get('js/json/teachers.json').success(function(data, status, headers,  config){
+		$scope.teachers = data;
+	});
+});
